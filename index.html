@@ -3,11 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="author" content="ABROR ANVARSON">
+    <title>ABROR ANVARSON | PORTFOLIO</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <h1>HELLO WORLD!</h1>
-    </main>
+    
+    <header id="headerBar">
+        <div class="container-fluid navbar">
+            <div id="headerLeft">
+                <a href="#">
+                    <img src="img/site-logo2-1112.png" alt="">
+                </a>
+            </div>
+            <div id="headerRight">
+                <nav id="navigation">
+                    <ul class="navbar">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">My Skills</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contacts</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="textIntro">
+                <div class="hi">
+                    <h1>Abror Anvarson</h1>
+                    <span>Designer. Developer. Freelancer.</span>
+                </div>
+                <ul class="social">
+                        <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" title="facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#" title="rss"><i class="fas fa-rss"></i></a></li>
+                        <li><a href="#" title="tumblr"><i class="fab fa-tumblr"></i></a></li>
+                        <li><a href="#" title="google-plus"><i class="fab fa-google-plus"></i></a></li>
+                        <li><a href="#" title="dribbble"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href="#" title="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="home"></section>
+    <section id="home"></section>
+    <section id="home"></section>
+    <section id="about">
+        <div class="container">
+            <div class="sectionTitle">
+                <h1>I'm Abror Anvarson</h1>
+                <span>ABOUT ME</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills"></section>
+
+    <section id="resume"></section>
+
+    <section id="portfolio"></section>
+
+    <section id="contact"></section>
+
+    <footer></footer>
+
+    <!-- jQuery Library -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+	$(document).on('scroll', function(){
+		var scrollTop = $(this).scrollTop();
+		if(scrollTop >=  30) {
+            $('#headerBar').css({backgroundColor: 'black', paddingTop: '0px'});
+		} else {
+			$('#headerBar').css({backgroundColor: 'transparent', paddingTop: '10px'});
+		}
+	})
+	</script>
+
+
 </body>
 </html>
