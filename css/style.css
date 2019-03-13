@@ -173,11 +173,14 @@ html{
 /* ABOUT */
 /* ----- */
 #about{
+    overflow: auto;
     width: 100%;
 }
+
 .sectionTitle {
     text-align: center;
     margin-bottom: 80px;
+    padding-top: 100px;
 }
 .sectionTitle span {
     font-family: "Poppins", sans-serif;
@@ -194,4 +197,109 @@ html{
     letter-spacing: 1px;
     font-weight: 700;
 
+}
+#bio{
+    float: left;
+    width: 50%;
+}
+#bio p {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Lora", serif;
+    color: #222;
+    letter-spacing: 0.9px;
+    font-weight: 500;
+}
+#skills{
+    float: left;
+    width: 48%;
+    padding-top: 20px;
+    padding-left: 40px;
+    margin-bottom: 90px;
+}
+.progress {
+    height: 6px;
+    overflow: hidden;
+    background-color: #eee;
+    margin-bottom: 35px;
+}
+#skills h5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000;
+}
+#skills h5 span {
+    float: right;
+}
+.progress-bar {
+    float: left;
+    height: 100%;
+    background-color: #ffd504;
+}
+
+/* RESUME */
+#resume{
+    background-color: #f7f7f7;
+    overflow: auto;
+}
+.vc_column-inner::after, .vc_column-inner::before {
+    content: " ";
+    display: table;
+}
+.resume-line {
+    margin-bottom: 70px;
+}
+.resume-left, .resume-right{
+    float: left;
+} 
+.resume-left {
+    text-align: right;
+    padding-right: 130px;
+}
+.resume-line h3 {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 0px;
+}
+.resume-right p {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Lora", serif;
+    color: #222;
+}
+.resume-right:before {
+    background-color: #ffd504;
+    opacity: .5;
+    content: '';
+    height: calc(100% + 54px);
+    width: 1px;
+    position: absolute;
+    left: -67px;
+    top: 16px;
+}
+.resume-right h3:before {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    position: absolute;
+    border: 2px solid #ffd504;
+    background-color: transparent;
+    left: -75px;
+    content: '';
+}
+.resume-right h3:before {
+    border: 2px solid;
+}
+
+/* PORTFOLIO */
+
+
+/* CONTACT */
+#contact{
+    background-color: #f7f7f7;
 }
