@@ -243,11 +243,14 @@ html{
 #resume{
     background-color: #f7f7f7;
     overflow: auto;
+    width: 100%;
+    padding-bottom: 30px;
+    
 }
-.vc_column-inner::after, .vc_column-inner::before {
+/* .vc_column-inner::after, .vc_column-inner::before {
     content: " ";
     display: table;
-}
+} */
 .resume-line {
     margin-bottom: 70px;
 }
@@ -276,7 +279,7 @@ html{
     background-color: #ffd504;
     opacity: .5;
     content: '';
-    height: calc(100% + 54px);
+    height: 90px;
     width: 1px;
     position: absolute;
     left: -67px;
